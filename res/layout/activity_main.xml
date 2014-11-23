@@ -1,4 +1,4 @@
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,63 +8,80 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.progressotest.MainActivity" >
 
-    <SeekBar android:id="@+id/seekBar"
-        android:max="100"
+    <SeekBar
+        android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-      
-        ></SeekBar>
-    
-    <ProgressBar 
-         android:id="@+id/progressBar"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         style="@android:style/Widget.ProgressBar.Horizontal"
-         android:layout_marginRight="5dp"
-         android:layout_below="@id/seekBar"
-        
-        ></ProgressBar> 
-        
+        android:max="100" >
+    </SeekBar>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_marginRight="5dp"
+        android:max="100" >
+    </ProgressBar>
+
     <Button
         android:id="@+id/increaseTwentyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
-        android:onClick="increaseTwenty"
-        ></Button>
-    
+        android:onClick="increaseTwenty" >
+    </Button>
+
     <Button
         android:id="@+id/decreaseTwentyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/increaseTwentyButton"
-        android:onClick="decreaseTwenty"
-        ></Button>
-    
+        android:onClick="decreaseTwenty" >
+    </Button>
+
     <Button
         android:id="@+id/setFullButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/decreaseTwentyButton"
-        android:onClick="setFull"
-        ></Button>
-    
+        android:onClick="setFull" >
+    </Button>
+
     <Button
         android:id="@+id/setZeroButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/setFullButton"
-        android:onClick="setZero"
-        ></Button>
-    
+        android:onClick="setZero" >
+    </Button>
+
     <Button
         android:id="@+id/setIndButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/setZeroButton"
-        android:onClick="setInd"
-        ></Button>
+        android:onClick="setInd" >
+    </Button>
+
+    <Button
+        android:id="@+id/dSecondsButton"
+        android:text="@string/dSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setIndButton"
+        android:onClick="determinateSecondsFire" >
+    </Button>
     
+    <Button
+        android:id="@+id/iSecondsButton"
+        android:text="@string/iSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dSecondsButton"
+        android:onClick="indeterminateSecondsFire" >
+    </Button>
 
 </RelativeLayout>

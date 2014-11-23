@@ -4,5 +4,7 @@
     <string name="app_name">ProgressoTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="dSeconds">Determinate Seconds</string>
+    <string name="iSeconds">Indeterminate Seconds</string>
 
 </resources>
